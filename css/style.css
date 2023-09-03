@@ -1,0 +1,64 @@
+body,
+.inner-nav-content {
+  background-color: #0d0d0d;
+  color: white;
+  overflow: hidden;
+}
+i,
+svg,
+#sideNav li {
+  cursor: pointer;
+}
+
+/* Nav Bar... */
+#sideNav {
+  z-index: 30;
+}
+#sideNav .list-unstyled li {
+  padding: 8px 0px;
+  position: relative;
+  top: 300px;
+}
+.logo {
+  width: 50px;
+}
+.nav-header {
+  background-color: white;
+  color: black;
+}
+.loading-screen {
+  z-index: 999;
+  display: flex;
+}
+
+/* Main page... */
+.meal {
+  cursor: pointer;
+  z-index: 0;
+}
+.meal:hover .meal-layer {
+  top: 0;
+}
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: all 0.5s;
+}
+.inner-loading-screen {
+  position: absolute;
+  z-index: 9;
+  background-color: #0d0d0d;
+  display: flex;
+}
+
+/* SEARCH AREA... */
+#searchContainer ::placeholder {
+  color: white !important;
+  opacity: 0.3 !important;
+}
+#searchContainer .form-control:focus {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
+}

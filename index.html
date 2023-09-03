@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <!-- LOADING PAGE -->
+    <div
+        class="position-absolute loading-screen top-0 start-0 end-0 bottom-0 bg-black justify-content-around align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <!-- SIDE NAV -->
+    <div id="sideNav" class="position-fixed d-flex top-0 bottom-0" style="left: -256.562px;">
+        <div class="inner-nav-content d-flex flex-column justify-content-between p-4">
+            <div class="nav-items overflow-hidden">
+                <ul class="list-unstyled">
+                    <li id="search">Search</li>
+                    <li id="categ">Categories</li>
+                    <li id="area">Area</li>
+                    <li id="ingr">Ingredients</li>
+                    <li id="contact">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer-content">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header text-center py-4 px-2 d-flex flex-column justify-content-between">
+            <img class="logo" src="src/logo.png" alt="Logo for the site">
+            <span class="open-close-icon"><i class="fa-solid fa-2x fa-bars"></i></span>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+
+            <div class="text-center">
+                <i class="fa-solid fa-globe "></i>
+                <br>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH CONTAINER -->
+    <div class="container w-75" id="searchContainer" style="display: none;">
+        <div class="row py-4 ">
+            <div class="col-md-6 ">
+                <input id="nameSearch" class="form-control bg-transparent text-white" autocomplete="off" type="text"
+                    placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input id="letterSearch" maxlength="1" autocomplete="off" class="form-control bg-transparent text-white"
+                    type="text" placeholder="Search By First Letter">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DATA CONTIANER -->
+    <div class="min-vh-100 position-relative">
+        <!-- DATA LOADING LAYER -->
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center"
+            style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <!-- DISPLAYED DATA CONTAINER -->
+        <div class="container position-relative">
+            <div class="row py-5 g-4 " id="rowData">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
