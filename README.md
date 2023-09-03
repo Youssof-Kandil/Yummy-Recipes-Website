@@ -2,7 +2,7 @@
 A website That uses APIs to illustrate and gather recipe data and provide them in a very easy to find and search for enviroment
 
  # technologies used
-   HTTP, CSS, BOOTSTRA[, JS, JQUERY
+   HTTP, CSS, BOOTSTRAP, JS, JQUERY
 
 
  # List of Abilities
